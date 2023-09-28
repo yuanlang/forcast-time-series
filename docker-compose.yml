@@ -2,10 +2,10 @@ version: '3.7'
 services:
   streamlit:
     build: .
-    hostname: chatbot
+    hostname: forcast
     restart: always
-    container_name: chatbot
+    container_name: forcast
     ports:
-      - 8501:8501
+      - 8502:8502
     env_file:
       - .env
